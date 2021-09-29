@@ -1,4 +1,4 @@
-# quark-servlet
+# quarkus-filter-servlet
 
 <p>Modified basic Quarkus greeting REST endpoint.</p>
 <p>Added a Servlet and a Filter mapped within the web.xml descriptor.</p>
