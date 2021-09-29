@@ -7,7 +7,7 @@
 
 	<servlet-mapping>
 		<servlet-name>myServlet</servlet-name>
-		<url-pattern>/process</url-pattern>
+		<url-pattern>/procesar-nombre</url-pattern>
 	</servlet-mapping>
 
 	<filter>
@@ -17,7 +17,7 @@
 
 	<filter-mapping>
 		<filter-name>myFilter</filter-name>
-		<url-pattern>/process</url-pattern>
+		<url-pattern>/procesar-nombre</url-pattern>
 	</filter-mapping>
 
 </web-app>

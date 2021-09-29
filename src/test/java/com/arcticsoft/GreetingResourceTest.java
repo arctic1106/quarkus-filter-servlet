@@ -11,11 +11,6 @@ public class GreetingResourceTest {
 
     @Test
     public void testHelloEndpoint() {
-        given()
-          .when().get("/hello")
-          .then()
-             .statusCode(200)
-             .body(is("Hello RESTEasy"));
+        given().when().get("/saludo").then().statusCode(200).body(is("Hello from the 'saludo' endpoint"));
     }
-
 }
