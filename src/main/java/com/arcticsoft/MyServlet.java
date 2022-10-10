@@ -1,14 +1,17 @@
 package com.arcticsoft;
 
-import javax.servlet.http.*;
-import javax.servlet.*;
-import java.io.*;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class MyServlet extends HttpServlet {
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter printWriter = response.getWriter();
-
         String nombre;
         String texto = ", esta petición ha pasado por un filtro sin ser modificada.<br>Para que se modifique escribe como nombre 'filtrame'<br>";
         if (request.getAttribute("texto") != null) {
